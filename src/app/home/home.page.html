@@ -80,12 +80,12 @@
   <ion-item-sliding>
     <ion-item color="dark">
       <ion-chip slot="start">
-        <ion-label color="warning">025</ion-label>
+        <ion-label color="eletric">025</ion-label>
       </ion-chip>
       <ion-label>
         <div>
           <h2>Pikachu</h2>
-          <ion-badge color="warning">Eletric</ion-badge>
+          <ion-badge color="eletric">Eletric</ion-badge>
         </div>
       </ion-label>
       <ion-thumbnail slot="end">
@@ -124,12 +124,12 @@
   <ion-item-sliding>
     <ion-item color="dark">
       <ion-chip slot="start">
-        <ion-label color="danger">038</ion-label>
+        <ion-label color="fire">038</ion-label>
       </ion-chip>
       <ion-label>
         <div>
           <h2>Ninetales</h2>
-          <ion-badge color="danger">Fire</ion-badge>
+          <ion-badge color="fire">Fire</ion-badge>
         </div>
       </ion-label>
       <ion-thumbnail slot="end">
@@ -186,6 +186,29 @@
     </ion-item-options>
   </ion-item-sliding>
 
+  <ion-item-sliding>
+    <ion-item color="dark">
+      <ion-chip slot="start">
+        <ion-label color="dragon">149</ion-label>
+      </ion-chip>
+      <ion-label>
+        <div>
+          <h2>Dragonite</h2>
+          <ion-badge color="dragon">Dragon</ion-badge>
+          <ion-badge color="flying">Flying</ion-badge>
+        </div>
+      </ion-label>
+      <ion-thumbnail slot="end">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png">
+      </ion-thumbnail>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)" color="warning">Alterar</ion-item-option>
+      <ion-item-option (click)="unread(item)" color="danger">Excluir</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+
   <!-- Mewtwo -->
   <ion-item-sliding>
     <ion-item color="dark">
@@ -200,28 +223,6 @@
       </ion-label>
       <ion-thumbnail slot="end">
         <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png">
-      </ion-thumbnail>
-    </ion-item>
-    <ion-item-options side="end">
-      <ion-item-option (click)="unread(item)" color="warning">Alterar</ion-item-option>
-      <ion-item-option (click)="unread(item)" color="danger">Excluir</ion-item-option>
-    </ion-item-options>
-  </ion-item-sliding>
-
-  <!-- Togepi -->
-  <ion-item-sliding>
-    <ion-item color="dark">
-      <ion-chip slot="start">
-        <ion-label color="fairy">175</ion-label>
-      </ion-chip>
-      <ion-label>
-        <div>
-          <h2>Togepi</h2>
-          <ion-badge color="fairy">Fairy</ion-badge>
-        </div>
-      </ion-label>
-      <ion-thumbnail slot="end">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/175.png">
       </ion-thumbnail>
     </ion-item>
     <ion-item-options side="end">
