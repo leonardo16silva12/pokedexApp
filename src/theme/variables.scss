@@ -219,8 +219,25 @@
     --ion-color-rock-contrast-rgb: 0,0,0;
     --ion-color-rock-shade: #8f7b1d;
     --ion-color-rock-tint: #ac9837;
+
+        /** redmain **/
+    --ion-color-redmain: #e3350d;
+    --ion-color-redmain-rgb: 227,53,13;
+    --ion-color-redmain-contrast: #ffffff;
+    --ion-color-redmain-contrast-rgb: 255,255,255;
+    --ion-color-redmain-shade: #c82f0b;
+    --ion-color-redmain-tint: #e64925;
 }
 
+
+.ion-color-redmain {
+  --ion-color-base: var(--ion-color-redmain);
+  --ion-color-base-rgb: var(--ion-color-redmain-rgb);
+  --ion-color-contrast: var(--ion-color-redmain-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-redmain-contrast-rgb);
+  --ion-color-shade: var(--ion-color-redmain-shade);
+  --ion-color-tint: var(--ion-color-redmain-tint);
+}
 
 .ion-color-grass {
   --ion-color-base: var(--ion-color-grass);
