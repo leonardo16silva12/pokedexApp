@@ -10,7 +10,6 @@
 
 
 import { Component } from '@angular/core';
-import { url } from 'inspector';
 import { PokemonService } from '../services/pokemon.service';
 
 @Component({
