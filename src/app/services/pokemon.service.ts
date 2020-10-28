@@ -6,15 +6,18 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PokemonService {
 
-  private url = 'https://pokeapi.co/api/v2/pokemon/?limit=20&offset=0'; 
+
+  private urlP = '';
 
   constructor(
     private http: HttpClient,
-  ) { }
+  ) {}
 
-  public buscarPokemons() {
-    return this.http.get(`${this.url}`);
+
+  public buscarPokemons(url: string) {
+    return this.http.get(url);
   }
+
 
 
   public buscarPokemonId(url: string) {

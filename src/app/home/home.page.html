@@ -1,3 +1,14 @@
+
+<!--
+
+
+APLICATIVO FEITO POR: CARLOS EDUARDO ARTIOLI E LEONARDO FELIPE DA SILVA
+
+
+
+-->
+
+
 <ion-header translucent>
   <ion-toolbar color="redmain">
     <ion-row>
@@ -50,18 +61,18 @@
 <ion-footer>
   <ion-toolbar color="redmain" class="ion-text-center">
 
-    <ion-buttons slot="start" *ngIf="">
-      <ion-button (click)="buscarPokemons()">
+    <ion-buttons slot="start" *ngIf="previous">
+      <ion-button (click)="previousPage()">
         <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
 
     Página: {{ pagina }}
     <br>
-    Total de Pokemons: {{ totalPokemons }}
+    Total de Páginas: {{ totalPaginas }}
 
-    <ion-buttons slot="end" *ngIf="pagina < totalPaginas">
-      <ion-button (click)="buscarPokemons(pagina + 1)">
+    <ion-buttons slot="end" *ngIf="next">
+      <ion-button (click)="nextPage()">
         <ion-icon slot="icon-only" name="chevron-forward-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
