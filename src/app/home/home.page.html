@@ -33,7 +33,7 @@ APLICATIVO FEITO POR: CARLOS EDUARDO ARTIOLI E LEONARDO FELIPE DA SILVA
 
   <ion-searchbar placeholder="Buscar Pokemons" color="redmain"> </ion-searchbar>
 
-  <ion-item-sliding *ngFor="let pokemon of listaPokemons">
+  <ion-item-sliding *ngFor="let pokemon of listaPokemonsExibir">
     <ion-item lines="none">
       <ion-chip slot="start">
         <ion-label [color]="pokemon.types[0].type.name | lowercase">{{ pokemon.id }}</ion-label>
@@ -61,18 +61,16 @@ APLICATIVO FEITO POR: CARLOS EDUARDO ARTIOLI E LEONARDO FELIPE DA SILVA
 <ion-footer>
   <ion-toolbar color="redmain" class="ion-text-center">
 
-    <ion-buttons slot="start" *ngIf="previous">
-      <ion-button (click)="previousPage()">
+    <ion-buttons slot="start" *ngIf="pagina > 1">
+      <ion-button (click)="paginacao(previous, -1)">
         <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
 
-    Página: {{ pagina }}
-    <br>
-    Total de Páginas: {{ totalPaginas }}
+    Página {{ pagina }} de {{ totalPaginas }}
 
-    <ion-buttons slot="end" *ngIf="next">
-      <ion-button (click)="nextPage()">
+    <ion-buttons slot="end" *ngIf="pagina < totalPaginas">
+      <ion-button (click)="paginacao(next, 1)">
         <ion-icon slot="icon-only" name="chevron-forward-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
